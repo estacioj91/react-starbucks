@@ -33,7 +33,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jpg|svg|gif)$/i,
+				test: /\.(png|jpg|jpeg|svg|gif)$/i,
 				use: [
 					{
 						loader: "url-loader",
@@ -54,7 +54,7 @@ module.exports = {
 				options: {
 					name: "[hash].[ext]",
 					outputPath: "assets/fonts/",
-					publicPath: (url) => "./assets/" + url,
+					publicPath: (url) => "assets/" + url,
 				},
 			},
 		],

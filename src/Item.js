@@ -5,7 +5,7 @@ const Item = (props) => {
 		<div className="item">
 			<img
 				className="menu-item-image"
-				src={require(`./assets/${props.image}.jpg`).default}
+				src={require(`./assets/${props.image}.png`).default}
 				alt="images"
 			/>
 			<p>{props.name}</p>

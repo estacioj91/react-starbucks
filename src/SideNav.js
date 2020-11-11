@@ -17,7 +17,7 @@ const SideNav = () => {
 	}
 	return (
 		<div>
-			<ul className="side-nav">{nav}</ul>
+			<ul>{nav}</ul>
 		</div>
 	);
 };

@@ -8,7 +8,7 @@ const Nav = () => {
 			<Navbar bg="light" variant="light">
 				<Navbar.Brand href="#home">
 					<img
-						alt=""
+						alt="nav"
 						src={require(`./assets/logo.svg`).default}
 						width="50"
 						height="50"
