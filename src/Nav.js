@@ -9,7 +9,7 @@ const Nav = () => {
 				<Navbar.Brand href="#home">
 					<img
 						alt=""
-						src="../assets/logo.svg"
+						src={require(`./assets/logo.svg`).default}
 						width="50"
 						height="50"
 						className="d-inline-block align-top"

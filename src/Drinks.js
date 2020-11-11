@@ -1,5 +1,6 @@
 import React from "react";
 import Item from "./Item";
+
 const Drinks = () => {
 	return (
 		<div style={{ marginBottom: "2em" }}>

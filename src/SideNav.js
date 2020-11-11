@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/side-nav.json";
+import data from "./data/side-nav.json";
 const SideNav = () => {
 	var nav = [];
 	console.log(data);

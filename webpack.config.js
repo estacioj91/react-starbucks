@@ -33,14 +33,28 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.(png|jpg|svg|gif)$/i,
+				use: [
+					{
+						loader: "url-loader",
+						options: {
+							limit: 8192,
+							name: "[hash].[ext]",
+							outputPath: "assets/",
+							publicPath: (url) => "./assets/" + url,
+						},
+					},
+				],
+			},
+			{
 				test: /\.(woff|woff2|ttf|otf)$/,
 				loader: "file-loader",
 				include: [/fonts/],
 
 				options: {
 					name: "[hash].[ext]",
-					outputPath: "css/",
-					publicPath: (url) => "../css/" + url,
+					outputPath: "assets/fonts/",
+					publicPath: (url) => "./assets/" + url,
 				},
 			},
 		],
