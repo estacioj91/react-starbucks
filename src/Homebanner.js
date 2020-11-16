@@ -87,6 +87,32 @@ const Homebanner = () => {
 					</button>
 				}
 			/>
+			<div
+				style={{
+					color: "black",
+					textAlign: "center",
+					margin: "1.0em auto",
+					fontSize: ".7em",
+					padding: "0 1em",
+					maxWidth: "60%",
+				}}
+			>
+				<p>
+					*Starbucks Rewards benefits are available at participating
+					Starbucks stores. Some restrictions apply. See
+					Starbucks.com/terms
+				</p>
+				<p style={{ padding: ".8em 0 " }}> </p>
+				<p>
+					**Under the Starbucks Rewards Program, Stars earned do not expire
+					as long as your Starbucks® Rewards Visa® Credit Card account is
+					open. If your Starbucks® Rewards Visa® Credit Card account is
+					closed for any reason, your Stars will expire six (6) months
+					after the calendar month in which that account was closed. Chase
+					credit cards are issued by Chase Bank USA, N.A. Deposit products
+					are provided by JPMorgan Chase Bank, N.A. Member FDIC
+				</p>
+			</div>
 		</div>
 	);
 };
