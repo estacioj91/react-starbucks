@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<div className="footer">
+		<article className="footer">
 			<div className="footer-select" style={{ paddingTop: "1em" }}>
 				<a href="/" className="footer-link">
 					<p>
@@ -13,7 +13,7 @@ const Footer = () => {
 					</p>
 				</a>
 			</div>
-		</div>
+		</article>
 	);
 };
 export default Footer;

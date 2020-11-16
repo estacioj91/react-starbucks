@@ -9,6 +9,87 @@ body {
 	font-style: normal;
 	font-weight: 300;
 }
+/* navbar */
+.sign-button {
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50px;
+	padding: 7px 16px;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	font-weight: 600;
+	line-height: 1.1;
+	font-size: 1rem;
+}
+.join-button {
+	color: white;
+	background-color: black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50px;
+	padding: 7px 16px;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	font-weight: 600;
+	line-height: 1.1;
+	font-size: 1rem;
+}
+.color-nav {
+	background-color: white;
+	padding-top: 1em;
+	padding-left: 3em;
+	padding-bottom: 1em;
+	/* margin-bottom: 1em; */
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+		0 0 2px rgba(0, 0, 0, 0.07);
+}
+.nav-menu-items {
+	font-weight: bold;
+	color: black !important;
+	font-size: 0.8em !important;
+	padding-right: 1.5em !important;
+}
+.nav-menu-items:hover {
+	color: #036635 !important;
+}
+@media screen and (max-width: 600px) {
+	.menu-span {
+		padding-left: 0.6em;
+	}
+	.signin {
+		display: flex;
+		flex-direction: row;
+	}
+	.hr-divider {
+		width: 100%;
+		margin: 1em 0 1em 0;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+			0 0 2px rgba(0, 0, 0, 0.07);
+	}
+	.menu-divider {
+		margin-top: 1em;
+	}
+	.nav-menu-items {
+		font-weight: 500;
+	}
+}
+/* textbanner */
+.text-banner {
+	background-color: #d3e9e2;
+	font-weight: 400;
+	letter-spacing: -0.01em;
+
+	padding-top: 32px;
+	padding-bottom: 32px;
+	text-align: center !important;
+}
+.text-banner > p {
+	color: #1e3932;
+	margin: auto;
+	width: 50%;
+	font-size: 19px;
+}
 /* header */
 .starbucks-green {
 	color: #036635;
@@ -20,6 +101,67 @@ body {
 }
 .logo-text {
 	font-size: 1.5em;
+}
+/* clear button */
+.clear-button {
+	background-color: Transparent;
+	border-color: white;
+	color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50px;
+	padding: 7px 16px;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	font-weight: 500;
+	line-height: 1.1;
+	font-size: 1rem;
+	width: 8em;
+}
+/* home banner */
+.home-banner-red {
+	background-color: #e1251b;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-bottom: 1.5em;
+}
+.home-banner-red > div {
+	flex-basis: 50%;
+	margin: auto;
+}
+.home-banner-red > div > img {
+	max-width: 100%;
+}
+.banner-textarea {
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	align-items: center;
+}
+.banner-textarea > h3 {
+	width: 15em;
+	margin-bottom: 1em;
+}
+
+.banner-textarea > p {
+	width: 20em;
+	margin-bottom: 2em;
+	font-size: 1.2em;
+}
+.body-padding {
+	padding: 0 8.5em 0 8.5em;
+}
+@media screen and (max-width: 600px) {
+	.body-padding {
+		padding: unset;
+	}
+	.home-banner-red > div {
+		flex-basis: 100%;
+	}
 }
 /* menu */
 .menu {

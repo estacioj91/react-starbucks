@@ -1,14 +1,17 @@
 import React from "react";
 import { render } from "react-dom";
-import Nav from "./Nav";
+import Navigation from "./Navigation";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import Textbanner from "./Textbanner";
+import Homebanner from "./Homebanner";
 const App = () => {
 	return (
 		<div>
-			<Nav />
-			<Menu />
-			<Footer />
+			<Navigation />
+			<Textbanner />
+			<Homebanner />
+			{/* <Footer /> */}
 		</div>
 	);
 };
