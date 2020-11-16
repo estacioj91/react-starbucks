@@ -7,9 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/style.css";
 const Navigation = () => {
 	return (
-		<div>
+		<div className="nav-shade">
 			<Navbar
-				className="color-nav"
+				className="color-nav body-wrap"
 				collapseOnSelect
 				expand="lg"
 				variant="light"

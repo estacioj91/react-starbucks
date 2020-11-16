@@ -4,6 +4,10 @@
 	font-weight: 300;
 	font-style: normal;
 }
+.body-wrap {
+	max-width: 1440px !important;
+	margin: 0 auto !important;
+}
 body {
 	font-family: freight-sans-pro, sans-serif;
 	font-style: normal;
@@ -41,6 +45,8 @@ body {
 	padding-left: 3em;
 	padding-bottom: 1em;
 	/* margin-bottom: 1em; */
+}
+.nav-shade {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
 		0 0 2px rgba(0, 0, 0, 0.07);
 }

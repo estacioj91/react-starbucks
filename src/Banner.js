@@ -6,6 +6,7 @@ const Banner = ({
 	font,
 	fWeight,
 	direction,
+	textColor,
 	button,
 	bgColor,
 }) => {
@@ -20,7 +21,7 @@ const Banner = ({
 					alt="red banner"
 				/>
 			</div>
-			<div className="text-div">
+			<div style={{ color: textColor }} className="text-div">
 				{header}
 				<p style={{ fontSize: font, fontWeight: fWeight }}>{text}</p>
 				{button}
