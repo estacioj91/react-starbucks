@@ -3,11 +3,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Dropdown } from "react-bootstrap";
-const Mainfooter = () => {
+const Mainfooter = ({ bottomPadding }) => {
 	return (
-		<div className="main-footer body-wrap">
+		<div className="main-footer body-wrap" style={{ width: "100%" }}>
 			<div></div>
-			<div className="social-media">
+			<div className="social-media" style={{ paddingBottom: bottomPadding }}>
 				<Dropdown.Divider />
 				<div className="icons">
 					<img src={require(`./assets/s.svg`).default} alt="" />

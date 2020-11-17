@@ -3,7 +3,7 @@ import Banner from "./Banner";
 // this component can be split up in the future
 const Homebanner = () => {
 	return (
-		<div className="body-padding body-wrap">
+		<div className="body-wrap">
 			<Banner
 				image="red-banner"
 				header={<h3>Wishing you the warmest Rewards</h3>}

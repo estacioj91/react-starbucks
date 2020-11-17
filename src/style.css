@@ -59,7 +59,7 @@ body {
 .nav-menu-items:hover {
 	color: #036635 !important;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
 	.menu-span {
 		padding-left: 0.6em;
 	}
@@ -314,10 +314,11 @@ body {
 }
 /* Main footer */
 .main-footer {
-	padding: 2em 0;
+	padding: 2em 0 0 0;
 }
 .social-media {
 	padding-left: 2em;
+	padding-bottom: 6em;
 }
 .icons > img {
 	padding-right: 0.5em;

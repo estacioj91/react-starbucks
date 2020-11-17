@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/style.css";
+import { Router, Link } from "@reach/router";
 const Navigation = () => {
 	return (
 		<div className="nav-shade">
@@ -14,29 +15,27 @@ const Navigation = () => {
 				expand="lg"
 				variant="light"
 			>
-				<Navbar.Brand href="#home">
-					<img
-						alt="nav"
-						src={require(`./assets/logo.svg`).default}
-						width="50"
-						height="50"
-						style={{ marginRight: ".5em" }}
-						className="d-inline-block align-top"
-					/>
-				</Navbar.Brand>
+				<Link to="/">
+					<Navbar.Brand>
+						<img
+							alt="nav"
+							src={require(`./assets/logo.svg`).default}
+							width="50"
+							height="50"
+							style={{ marginRight: ".5em" }}
+							className="d-inline-block align-top"
+						/>
+					</Navbar.Brand>
+				</Link>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto ">
 						<div className="menu-divider"></div>
-						<Nav.Link className="nav-menu-items" href="#features">
+						<Nav.Link as={Link} to="/menu" className="nav-menu-items">
 							MENU
 						</Nav.Link>
-						<Nav.Link className="nav-menu-items" href="#pricing">
-							REWARDS
-						</Nav.Link>
-						<Nav.Link className="nav-menu-items" href="#pricing">
-							GIFT CARDS
-						</Nav.Link>
+						<Nav.Link className="nav-menu-items">REWARDS</Nav.Link>
+						<Nav.Link className="nav-menu-items">GIFT CARDS</Nav.Link>
 					</Nav>
 					<hr className="hr-divider"></hr>
 					<Nav className="signin">
@@ -54,33 +53,3 @@ const Navigation = () => {
 	);
 };
 export default Navigation;
-{
-	/* <Navbar bg="light" variant="light">
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Brand href="#home">
-					<img
-						alt="nav"
-						src={require(`./assets/logo.svg`).default}
-						width="50"
-						height="50"
-						className="d-inline-block align-top"
-					/>{" "}
-					<span className="logo-text starbucks-green starbucks-font">
-						Starbucks
-					</span>
-				</Navbar.Brand>
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav defaultActiveKey="/home" as="ul">
-						<Nav.Item as="li">
-							<Nav.Link href="/home">Active</Nav.Link>
-						</Nav.Item>
-						<Nav.Item as="li">
-							<Nav.Link eventKey="link-1">Link</Nav.Link>
-						</Nav.Item>
-						<Nav.Item as="li">
-							<Nav.Link eventKey="link-2">Link</Nav.Link>
-						</Nav.Item>
-					</Nav>
-				</Navbar.Collapse>
-			</Navbar> */
-}

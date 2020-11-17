@@ -5,6 +5,10 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "build"),
 		filename: "bundle.js",
+		publicPath: "/",
+	},
+	devServer: {
+		historyApiFallback: true,
 	},
 	resolve: {
 		modules: [path.join(__dirname, "src"), "node_modules"],

@@ -3,17 +3,22 @@ import { render } from "react-dom";
 import Navigation from "./Navigation";
 import Menu from "./Menu";
 import Footer from "./Footer";
-import Textbanner from "./Textbanner";
-import Homebanner from "./Homebanner";
+import Home from "./Home";
 import Mainfooter from "./Mainfooter";
+import { Router, Link } from "@reach/router";
 const App = () => {
 	return (
-		<div>
+		<div
+			style={{
+				display: "flex",
+				flexDirection: "column",
+			}}
+		>
 			<Navigation />
-			<Textbanner />
-			<Homebanner />
-			<Mainfooter />
-			{/* <Footer /> */}
+			<Router>
+				<Home path="/" />
+				<Menu path="menu" />
+			</Router>
 		</div>
 	);
 };
