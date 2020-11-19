@@ -49,6 +49,7 @@ body {
 .nav-shade {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
 		0 0 2px rgba(0, 0, 0, 0.07);
+	z-index: 1;
 }
 .nav-menu-items {
 	font-weight: bold;
@@ -275,6 +276,35 @@ body {
 }
 .side-nav > div > ul > li > a:hover {
 	text-decoration: none;
+}
+/* rewards page */
+.rewards-padding {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+.rewardsGS {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 2em;
+}
+@media screen and (max-width: 850px) {
+	.rewards-padding {
+		padding-top: 1em;
+		padding-bottom: 0;
+	}
+	.rewardsGS > div {
+		flex-basis: 100% !important;
+		padding: 0 8em;
+		padding-bottom: 2em;
+	}
+}
+@media screen and (max-width: 550px) {
+	.rewardsGS > div {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 /* footer */
 .footer {

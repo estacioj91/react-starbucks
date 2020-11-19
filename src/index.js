@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import Menu from "./Menu";
 import Footer from "./Footer";
 import Home from "./Home";
+import Rewards from "./Rewards";
 import Mainfooter from "./Mainfooter";
 import { Router, Link } from "@reach/router";
 const App = () => {
@@ -15,9 +16,10 @@ const App = () => {
 			}}
 		>
 			<Navigation />
-			<Router>
+			<Router primary={false}>
 				<Home path="/" />
 				<Menu path="menu" />
+				<Rewards path="rewards" />
 			</Router>
 		</div>
 	);

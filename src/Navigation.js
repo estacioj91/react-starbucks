@@ -1,11 +1,9 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/style.css";
-import { Router, Link } from "@reach/router";
+import { Link } from "@reach/router";
 const Navigation = () => {
 	return (
 		<div className="nav-shade">
@@ -14,9 +12,10 @@ const Navigation = () => {
 				collapseOnSelect
 				expand="lg"
 				variant="light"
+				collapseOnSelect="collapseOnSelect"
 			>
-				<Link to="/">
-					<Navbar.Brand>
+				<Nav.Link eventKey="4" as={Link} to="/">
+					<Navbar.Brand eventKey="4">
 						<img
 							alt="nav"
 							src={require(`./assets/logo.svg`).default}
@@ -26,16 +25,30 @@ const Navigation = () => {
 							className="d-inline-block align-top"
 						/>
 					</Navbar.Brand>
-				</Link>
+				</Nav.Link>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto ">
 						<div className="menu-divider"></div>
-						<Nav.Link as={Link} to="/menu" className="nav-menu-items">
+						<Nav.Link
+							eventKey="1"
+							as={Link}
+							to="/menu"
+							className="nav-menu-items"
+						>
 							MENU
 						</Nav.Link>
-						<Nav.Link className="nav-menu-items">REWARDS</Nav.Link>
-						<Nav.Link className="nav-menu-items">GIFT CARDS</Nav.Link>
+						<Nav.Link
+							eventKey="2"
+							as={Link}
+							to="/rewards"
+							className="nav-menu-items"
+						>
+							REWARDS
+						</Nav.Link>
+						<Nav.Link eventKey="3" className="nav-menu-items">
+							GIFT CARDS
+						</Nav.Link>
 					</Nav>
 					<hr className="hr-divider"></hr>
 					<Nav className="signin">
