@@ -5,12 +5,12 @@ const Footer = () => {
 		<article className="footer">
 			<div className="footer-select" style={{ paddingTop: "1em" }}>
 				<a href="/" className="footer-link">
-					<p>
+					<div style={{ display: "block" }}>
 						<span>For item availability</span>
 						<p>
 							<strong style={{ color: "white" }}>Choose a store</strong>
 						</p>
-					</p>
+					</div>
 				</a>
 			</div>
 		</article>

@@ -4,6 +4,21 @@
 	font-weight: 300;
 	font-style: normal;
 }
+@font-face {
+	font-family: SodoBold;
+	src: url("./assets/fonts/SodoBold.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+h3,
+h2,
+h1,
+h4,
+h5 {
+	font-family: SodoBold, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
 .body-wrap {
 	max-width: 1440px !important;
 	margin: 0 auto !important;
@@ -214,7 +229,7 @@ body {
 }
 /* menu */
 .menu {
-	padding-left: 3em;
+	padding-left: 4em;
 	display: flex;
 	flex-direction: row;
 }
@@ -288,7 +303,41 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 0 2em;
+	margin-bottom: 5em !important;
 }
+/* tab clearing boostrap css */
+.our-tab {
+	border: unset;
+	padding-top: 1.5em;
+}
+.our-tab > a {
+	border: unset !important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.2em;
+	color: black;
+	font-weight: 500;
+	padding-left: 1.3em;
+	padding-right: 1.3em;
+}
+.our-tab > .nav-link.active {
+	border-bottom: 0.2em solid #008248 !important;
+	transition: 0.2s ease-out;
+	background-color: #f0f7f4;
+}
+
+.tab-image {
+	background-color: #d3e9e1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
+.fade {
+	transition: opacity 1s linear !important;
+}
+
 @media screen and (max-width: 850px) {
 	.rewards-padding {
 		padding-top: 1em;
@@ -299,11 +348,17 @@ body {
 		padding: 0 8em;
 		padding-bottom: 2em;
 	}
+	.tab-image {
+		flex-direction: column;
+	}
 }
 @media screen and (max-width: 550px) {
 	.rewardsGS > div {
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.extra {
+		flex-basis: 100% !important;
 	}
 }
 /* footer */
@@ -426,4 +481,46 @@ body {
 	.footer-select {
 		width: 80%;
 	}
+}
+/* Giftcards */
+.card {
+	/* overflow: hidden !important; */
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+	border-radius: 25px;
+	width: 100% !important;
+	max-width: 20em;
+	max-height: 15em;
+}
+.carousel-items {
+	padding-top: 2em !important;
+	padding-bottom: 2em !important;
+	overflow: hidden !important;
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+	justify-content: center;
+	padding-left: 2em;
+}
+.carousel-control-prev-icon {
+	display: none !important;
+}
+.carousel-control-next {
+	opacity: 1 !important;
+}
+
+.carousel-control-next > button {
+	width: 3em;
+	height: 3em;
+	background-color: white;
+	border-radius: 50%;
+	border-width: 0;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.24), 0 8px 12px rgba(0, 0, 0, 0.14);
+}
+.carousel-control-next > button > div {
+	background-image: url("./assets/next.svg");
+	height: 1em !important;
+	background-repeat: no-repeat;
+	background-position: center;
 }

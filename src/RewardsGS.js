@@ -9,7 +9,6 @@ const RewardsGS = ({ image, header, text }) => {
 				alignItems: "center",
 				textAlign: "center",
 			}}
-			className
 		>
 			<img
 				style={{ width: "3em", marginBottom: "1em" }}

@@ -58,7 +58,7 @@ module.exports = {
 				options: {
 					name: "[hash].[ext]",
 					outputPath: "assets/fonts/",
-					publicPath: (url) => "assets/" + url,
+					publicPath: (url) => "assets/fonts/" + url,
 				},
 			},
 		],

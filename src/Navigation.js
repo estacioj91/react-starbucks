@@ -15,7 +15,7 @@ const Navigation = () => {
 				collapseOnSelect="collapseOnSelect"
 			>
 				<Nav.Link eventKey="4" as={Link} to="/">
-					<Navbar.Brand eventKey="4">
+					<Navbar.Brand>
 						<img
 							alt="nav"
 							src={require(`./assets/logo.svg`).default}
@@ -28,7 +28,7 @@ const Navigation = () => {
 				</Nav.Link>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav className="mr-auto ">
+					<Nav className="mr-auto " style={{ fontFamily: "SodoBold" }}>
 						<div className="menu-divider"></div>
 						<Nav.Link
 							eventKey="1"
@@ -46,7 +46,12 @@ const Navigation = () => {
 						>
 							REWARDS
 						</Nav.Link>
-						<Nav.Link eventKey="3" className="nav-menu-items">
+						<Nav.Link
+							eventKey="3"
+							as={Link}
+							to="/giftcards"
+							className="nav-menu-items"
+						>
 							GIFT CARDS
 						</Nav.Link>
 					</Nav>
@@ -56,7 +61,7 @@ const Navigation = () => {
 							<button className="sign-button">Sign in</button>
 						</Nav.Link>
 						<span className="menu-span"> </span>
-						<Nav.Link eventKey={2} href="#memes">
+						<Nav.Link href="#memes">
 							<button className="join-button">Join now</button>
 						</Nav.Link>
 					</Nav>

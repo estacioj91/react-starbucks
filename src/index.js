@@ -7,6 +7,7 @@ import Home from "./Home";
 import Rewards from "./Rewards";
 import Mainfooter from "./Mainfooter";
 import { Router, Link } from "@reach/router";
+import Giftcards from "./Giftcards";
 const App = () => {
 	return (
 		<div
@@ -20,6 +21,7 @@ const App = () => {
 				<Home path="/" />
 				<Menu path="menu" />
 				<Rewards path="rewards" />
+				<Giftcards path="giftcards" />
 			</Router>
 		</div>
 	);

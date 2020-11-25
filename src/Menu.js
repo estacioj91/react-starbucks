@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Menu = () => {
 	return (
 		<div>
-			<div className="menu">
+			<div className="menu body-wrap">
 				<div className="side-nav">
 					<SideNav />
 				</div>
