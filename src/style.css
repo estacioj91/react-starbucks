@@ -500,8 +500,8 @@ body {
 	display: flex !important;
 	flex-direction: row !important;
 	flex-wrap: nowrap !important;
+	padding-left: 1em !important;
 	justify-content: center;
-	padding-left: 2em;
 }
 .carousel-control-prev-icon {
 	display: none !important;
@@ -524,3 +524,18 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.fade-away {
+	-webkit-mask: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0) 1%,
+		rgba(0, 0, 0, 1) 10%
+	);
+}
+/* 
+-webkit-mask: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0) 1%,
+		rgba(0, 0, 0, 1) 10%
+	);
+-webkit-mask: linear-gradient(-90deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 50%);
+*/

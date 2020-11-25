@@ -111,7 +111,7 @@ const Giftcards = () => {
 		}
 		return cardList.map((arr) => {
 			return (
-				<Carousel.Item key={Math.random()}>
+				<Carousel.Item className="fade-away" key={Math.random()}>
 					<Carouselitems key={Math.random()} card={arr} />
 				</Carousel.Item>
 			);
@@ -121,6 +121,7 @@ const Giftcards = () => {
 		<div className="body-wrap">
 			<Giftheader name="FEATURED" />
 			<Carousel
+				className="fade-away"
 				interval={null}
 				indicators={false}
 				nextIcon={
@@ -136,6 +137,7 @@ const Giftcards = () => {
 			</Carousel>
 			<Giftheader name="THANKSGIVING" />
 			<Carousel
+				className="fade-away"
 				interval={null}
 				indicators={false}
 				nextIcon={
@@ -151,6 +153,7 @@ const Giftcards = () => {
 			</Carousel>
 			<Giftheader name="Red Cup" />
 			<Carousel
+				className="fade-away"
 				interval={null}
 				indicators={false}
 				nextIcon={
