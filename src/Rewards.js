@@ -6,6 +6,95 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Rewardsextras from "./Rewardsextras";
 
+const Earn = ({ image, header, text }) => {
+	return (
+		<div className="earn">
+			<img
+				style={{ width: "7em", height: "10em" }}
+				src={require(`./assets/${image}.png`).default}
+				alt=""
+			/>
+			<div className="earn-text">
+				<h5>{header}</h5>
+				<p>{text}</p>
+			</div>
+		</div>
+	);
+};
+const Rewardsearn = () => {
+	return (
+		<div style={{ backgroundColor: "#F3F1E7", paddingBottom: "2em" }}>
+			<div className="body-wrap earn-wrap">
+				<div style={{ textAlign: "center", padding: "3em 0 4em 0" }}>
+					<h3 style={{ paddingBottom: "1em" }}>
+						Cash or card, you earn Stars
+					</h3>
+					<p>
+						No matter how you pay, you can earn Stars with your morning
+						coffe. Those Stars add up to (really delicious) Rewards
+					</p>
+				</div>
+				<div className="earn-row">
+					<div style={{ paddingBottom: "1em" }}>
+						<h4>1★ per dollar</h4>
+						<p>Pay as you go</p>
+					</div>
+					<div className="earn-row-items">
+						<Earn
+							header="Scan and pay separately"
+							text="Use cash or credit/debit card at the register."
+							image="1A"
+						/>
+						<Earn
+							header="Save payment in the app"
+							text="Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step."
+							image="1B"
+						/>
+					</div>
+				</div>
+				<hr />
+				<div className="earn-row">
+					<div style={{ paddingBottom: "1em" }}>
+						<h4>2★ per dollar</h4>
+						<p>Add funds in the app</p>
+					</div>
+					<div className="earn-row-items">
+						<Earn
+							header="Preload"
+							text="To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.
+
+							"
+							image="2A"
+						/>
+						<Earn
+							header="Register your gift card"
+							text="Then use it to pay through the app. You can even consolidate balances from multiple cards in one place."
+							image="2B"
+						/>
+					</div>
+				</div>
+				<hr />
+				<div className="earn-row">
+					<div style={{ paddingBottom: "1em" }}>
+						<h4>Up to 3★ per dollar</h4>
+						<p>With Starbucks® Rewards Visa® Card</p>
+					</div>
+					<div className="earn-row-items">
+						<Earn
+							header="Earn Stars even faster
+							"
+							text="Earn Stars on all purchases you make with our 
+							credit card
+							opens in new window in and outside of Starbucks. Earn 1 Star per $1 when you digitally preload your Starbucks Card with your Starbucks® Rewards Visa® Card, and earn 2 Stars per $1 when you pay with that preloaded Starbucks Card."
+							image="3A"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
+
 const Tabimage = ({ image, header, text }) => {
 	return (
 		<div
@@ -20,7 +109,7 @@ const Tabimage = ({ image, header, text }) => {
 			<img
 				style={{
 					width: "28em",
-					height: "18em",
+					height: "16em",
 					maxWidth: "100%",
 				}}
 				src={require(`./assets/${image}.png`).default}
@@ -61,7 +150,7 @@ const Rewardstab = () => {
 			}}
 		>
 			<div>
-				<h3
+				<h4
 					style={{
 						color: "black",
 						fontWeight: "500",
@@ -72,7 +161,7 @@ const Rewardstab = () => {
 					}}
 				>
 					Get your favorites for free
-				</h3>
+				</h4>
 				<div>
 					<Tabs
 						className="our-tab"
@@ -228,9 +317,9 @@ const Rewards = () => {
 			<Rewardshero
 				image="hero"
 				header={
-					<h3 style={{ fontWeight: "bold" }}>
+					<h4 style={{ fontWeight: "bold" }}>
 						More ways to pay. More ways to get rewarded.
-					</h3>
+					</h4>
 				}
 				text="As a Starbucks® Rewards member, you’ll earn free food and drinks whether you pay with cash, credit card or gift card. 
                 Terms of use
@@ -321,6 +410,7 @@ const Rewards = () => {
 			</div>
 			<Rewardstab />
 			<Rewardsextras />
+			<Rewardsearn />
 			<Mainfooter bottomPadding="0em" />
 		</div>
 	);

@@ -24,7 +24,6 @@ h5 {
 	margin: 0 auto !important;
 }
 body {
-	font-family: freight-sans-pro, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
@@ -462,10 +461,10 @@ body {
 		flex-direction: row;
 	}
 	.side-nav {
-		flex-basis: 50%;
+		display: none;
 	}
 	.item-menu {
-		flex-basis: 50%;
+		flex-basis: 100%;
 	}
 	.item {
 		text-align: center;
@@ -530,6 +529,61 @@ body {
 		rgba(0, 0, 0, 0) 1%,
 		rgba(0, 0, 0, 1) 10%
 	);
+}
+.giftcard-banner > div > div > img {
+	width: 100%;
+	margin: 0 !important;
+}
+/* earn */
+.earn {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 50%;
+}
+.earn-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.earn-row-items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.earn-row > div:nth-child(1) {
+	flex-basis: 25%;
+}
+.earn-row > div:nth-child(2) {
+	flex-basis: 75%;
+}
+.earn-text {
+	width: 60%;
+	padding-left: 1em;
+}
+@media screen and (max-width: 1440px) {
+	.earn-wrap {
+		padding: 0 2em 0 2em;
+	}
+}
+@media screen and (max-width: 650px) {
+}
+@media screen and (max-width: 850px) {
+	.earn {
+		flex-basis: 100%;
+	}
+	.earn-row > div:nth-child(1) {
+		flex-basis: 100%;
+	}
+	.earn-row > div:nth-child(2) {
+		flex-basis: 100%;
+	}
+	.earn-text {
+		width: 100%;
+		padding-left: 1em;
+	}
 }
 /* 
 -webkit-mask: linear-gradient(

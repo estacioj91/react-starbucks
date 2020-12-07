@@ -10,6 +10,9 @@ const Food = () => {
 				<Item image="bagel" name="Bakery" />
 				<Item image="pumpkin-muffin" name="Lunch" />
 				<Item image="lemon-cake" name="Snacks & Sweets" />
+				<Item image="grilled" name="Lunch" />
+				<Item image="snack" name="Snack & Sweets" />
+				<Item image="yogurt" name="Yogurt & Custard" />
 			</div>
 		</div>
 	);

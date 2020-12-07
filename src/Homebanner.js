@@ -87,6 +87,32 @@ const Homebanner = () => {
 					</button>
 				}
 			/>
+			<Banner
+				image="goodthings"
+				header={
+					<h3 style={{ fontWeight: "bold" }}>
+						Fighting hunger this holiday
+					</h3>
+				}
+				text="Hunger is affecting millions of people across America this holiday season, but together, we can help. Join us in our commitment to hunger relief."
+				direction="row-reverse"
+				bgColor="#1e3932"
+				font="1.2em"
+				fWeight="300"
+				textColor="white"
+				button={
+					<button
+						style={{
+							width: "15em",
+							borderColor: "white",
+							color: "white",
+						}}
+						className="clear-button"
+					>
+						Learn more
+					</button>
+				}
+			/>
 			<div
 				style={{
 					color: "black",

@@ -21,7 +21,16 @@ const Banner = ({
 					alt="red banner"
 				/>
 			</div>
-			<div style={{ color: textColor }} className="text-div">
+			<div
+				style={{
+					color: textColor,
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "center",
+					alignItems: "center",
+				}}
+				className="text-div"
+			>
 				{header}
 				<p style={{ fontSize: font, fontWeight: fWeight }}>{text}</p>
 				{button}

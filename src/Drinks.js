@@ -11,6 +11,8 @@ const Drinks = () => {
 				<Item image="caramel-ribbon" name="Hot Drinks" />
 				<Item image="chocolate-cookie" name="Frappuccino Beverages" />
 				<Item image="match-green" name="Hot Teas" />
+				<Item image="colddrink" name="Iced Teas" />
+				<Item image="cold" name="Cold Drinks" />
 			</div>
 		</div>
 	);
